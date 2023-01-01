@@ -1,16 +1,16 @@
-class Pallet {
-  constructor({ position, radius }) {
-    this.position = position;
-    this.radius = radius;
-    this.height = 10;
-    this.width = 10;
+class Pallet extends Sprite{
+  constructor({ position,imageSrc,frameRate,frameBuffer,}) {
+    
+    super({position,imageSrc,frameRate,frameBuffer,autoplay:true,loop:true})
   }
-  draw() {
-    // ctx.beginPath();
-    // ctx.arc(this.position.x, this.position.y+14, this.radius, 0, Math.PI * 2);
-    ctx.fillStyle = "yellow";
-    ctx.fillRect(this.position.x, this.position.y+15, this.width, this.height);
-    // ctx.fill();
-    // ctx.closePath();
-  }
+  
 }
+
+/*
+ this.currentFrame = 0;
+    this.elaspedFrame = 0;
+    this.frameRate = 5;
+    this.autoplay = true
+    this.frameBuffer = 4
+    this.loop = true
+*/ 

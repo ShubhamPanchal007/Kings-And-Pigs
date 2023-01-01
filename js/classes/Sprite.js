@@ -7,6 +7,7 @@ class Sprite {
     frameBuffer = 5,
     loop,
     autoplay = true,
+    
   }) {
     this.image = new Image();
     // Setting the dimensions of the player to the dimentions of the image
@@ -19,6 +20,7 @@ class Sprite {
     this.image.src = imageSrc;
 
     this.position = position;
+    
     // animatio
     this.currentFrame = 0;
     this.elaspedFrame = 0;

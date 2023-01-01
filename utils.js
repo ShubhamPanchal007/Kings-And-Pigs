@@ -30,9 +30,23 @@ Array.prototype.createObjectFrom2D = function () {
           new Pallet({
             position: {
               x: 64 * x,
-              y: 64 * y,
+              y: 64 * y + 20,
             },
-            radius: 5,
+            imageSrc: "../../img/Coin_Gems/MonedaD.png",
+            frameRate: 5,
+            frameBuffer: 5,
+          })
+        );
+      } else if (symbol === "b") {
+        pallets.push(
+          new Pallet({
+            position: {
+              x: 64 * x,
+              y: 64 * y + 12,
+            },
+            imageSrc: "../../img/game_items_pack/PNG/32px/bomb.png",
+            // frameRate: 5,
+            // frameBuffer: 5,
           })
         );
       }

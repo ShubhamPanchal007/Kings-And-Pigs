@@ -18,10 +18,10 @@ let player = new Player({
   scoreIncreaser,
   frameRate: 11,
   imageSrc: "./img/king/idle.png",
-  loop: false,
+  loop: true,
   position: {
     x: 200,
-    y: 250,
+    y: 300,
   },
   animations: {
     idle: {
